@@ -1,0 +1,165 @@
+/* ==========================================
+
+navi-responsive.css
+
+Responsive Navigation basierend auf display:flex
+
+============================================*/
+
+@media screen {
+  /* 
+     * Menübutton zum ein- und Ausklappen gestalten
+     */
+
+  .menubutton {
+    display: block;
+    background: #666;
+    color: white;
+
+    font-family: inherit;
+    font-size: 1.2rem;
+    text-align: center;
+
+    padding: 0.7rem 1.2rem;
+    border: 0;
+    border-radius: 0.25rem;
+    margin: 0 1rem 0.5rem 1rem;
+  }
+
+  .site-nav > .wrapper {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /**
+      * Basisformatierung
+      */
+
+  .site-nav {
+    margin-left: auto;
+    position: -webkit-fixed;
+    width: 100%;
+
+    color: white;
+
+    padding: 0.5rem 0 0 0;
+
+    z-index: 1000;
+  }
+
+  /** 
+  * Liste gestalten 
+  */
+
+  .site-nav-list {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-nav-list li {
+    /* display: inline-block; */
+    list-style: none;
+    text-align: center;
+  }
+
+  /**
+  * Links gestalten 
+  */
+
+  .site-nav-list a {
+    display: block;
+    text-decoration: none;
+
+    min-width: 72px;
+    min-width: 70px;
+
+    /* text-align: center; */
+    background: rgba(51, 51, 51, 0.9);
+    color: white;
+
+    padding: 1rem 1rem;
+  }
+
+  .site-nav-list a.sie-sind-hier {
+    background: #666;
+    color: white;
+  }
+
+  .site-nav-list a:hover,
+  .site-nav-list a:focus {
+    background: #666;
+    color: white;
+  }
+
+  .site-nav-list a:active {
+    background: #0b74b8;
+    color: white;
+  }
+
+  /* Die Navigationsliste ausblenden */
+
+  .site-nav-list {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  /* Die Navigationsliste nach einem Klick auf den Menübutton einblenden */
+
+  .show-menu + .site-nav-list {
+    max-height: 100rem;
+
+    transition: max-height 400ms ease-in-out;
+  }
+}
+
+/* Ende @media */
+
+/** 
+  * Navigation ab 768px - Menübutton ausblenden und Liste horizontal anzeigen 
+  * 
+  */
+
+@media screen and (min-width: 768px) {
+  /* Menübutton verstecken */
+  .menubutton {
+    display: none;
+  }
+
+  /* Liste einblenden und als Zeile darstellen */
+  .site-nav-list {
+    max-height: none;
+    overflow: auto;
+    transition: none;
+
+    flex-flow: row wrap;
+  }
+
+  .site-nav-list a {
+    background: rgba(51, 51, 51, 0.4);
+  }
+
+  /* Fine-Tuning und Fallback für Flexbox */
+  .site-nav {
+    padding: 0;
+    width: 50%;
+    background: rgba(51, 51, 51, 0.619);
+    box-shadow: 0 2px 6px rgba(51, 51, 51, 0.3);
+  }
+
+  .site-nav > .wrapper {
+    padding: 0 0rem;
+  }
+
+  .site-nav-list li {
+    display: inline-block;
+
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Ende der Media Query */

@@ -1,0 +1,77 @@
+/* ===============================
+
+content.css
+
+- Links in main
+- Alle Elemente in main
+
+================================*/
+
+@media screen {
+  .site-content {
+    line-height: 1.5;
+  }
+
+  .site-content a:link {
+    color: #0674b8;
+  }
+
+  .site-content a:visited {
+    color: #36aade;
+  }
+
+  .site-content a:hover .site-content a:focus {
+    color: #f5662e;
+  }
+
+  .site-content a:active {
+    color: #d90000;
+  }
+
+  /** Startseite
+      *
+      * Gestaltung der Startseite 
+      *
+      */
+
+  .profile {
+    margin: 50px;
+  }
+
+  .profile img {
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px gray;
+  }
+
+  .nav-social ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  i {
+    font-size: 5rem;
+    color: lightgray;
+    text-shadow: 2px 2px 2px black;
+    background-color: #f5662e;
+    border-radius: 50%;
+  }
+
+  /** Unterseite
+      *
+      * Gestaltung der ersten Unterseite 
+      *
+      */
+}
+/* Ende @media */
+
+@media screen and (min-width: 1080px) {
+}
+
+/* Ende der Media Query */
+
+@media screen and (min-width: 800px) {
+}
+/* Ende der Media Query */

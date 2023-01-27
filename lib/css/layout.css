@@ -1,0 +1,88 @@
+/* =================================
+
+layout.css
+
+- Gestaltung der Layoutbereiche
+- Hauptnavigation in eigenem Stylesheet
+- Elemente im Inhaltsbereich in content.css
+
+================================== */
+
+@media screen {
+  body {
+    background-color: #f5f5f3;
+    overflow-x: hidden;
+  }
+
+  /**
+  * Kopfbetreich
+  */
+
+  .site-header {
+    height: 100px;
+  }
+
+  .site-header h1 {
+    font-family: sacramento;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px gray;
+  }
+
+  .site-header h1 a {
+    text-decoration: none;
+  }
+
+  .site-nav {
+    display: flex;
+  }
+  .site-nav-list {
+    display: flex;
+  }
+
+  /**
+  * Fußbereich
+  */
+
+  .site-footer {
+    background-color: #333;
+    opacity: 0.7;
+    padding: 1%;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
+  .site-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+  }
+
+  .footer-nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-nav li {
+    margin-right: 0.5rem;
+  }
+
+  .footer-nav li:first-child {
+    border-right: 1px solid white;
+    padding-right: 0.5rem;
+  }
+
+  .footer-nav li:last-child {
+    margin-left: auto;
+  }
+}
+
+/* Ende @media */
+
+@media screen and (min-width: 768px) {
+}
+
+/* Ende der Media Query */
