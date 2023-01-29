@@ -43,7 +43,6 @@ layout.css
   */
 
   .site-nav {
-    height: ;
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -54,6 +53,7 @@ layout.css
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+    list-style-type: none;
   }
 
   .site-nav a {
