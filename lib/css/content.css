@@ -34,13 +34,32 @@ content.css
       *
       */
 
-  .profile {
-    margin: 50px;
+  .hero {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
   }
 
-  .profile img {
-    border-radius: 10%;
-    box-shadow: 2px 2px 2px gray;
+  .hero-banner {
+    width: 22%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 17%;
+    margin-bottom: 200px;
+  }
+
+  .hero-banner h2 {
+    font-size: 4rem;
+  }
+
+  .hero-banner button {
+    width: 60%;
+    height: 4em;
+    border-radius: 2em;
   }
 
   .nav-social ul {
