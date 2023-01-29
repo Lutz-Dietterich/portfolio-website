@@ -31,6 +31,7 @@ layout.css
     font-size: 4rem;
     font-weight: 600;
     text-shadow: 2px 2px 2px gray;
+    margin-left: 5%;
   }
 
   .site-header h1 a {

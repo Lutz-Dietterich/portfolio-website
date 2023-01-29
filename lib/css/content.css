@@ -42,24 +42,35 @@ content.css
     z-index: -1;
   }
 
-  .hero-banner {
-    width: 22%;
-    height: 300px;
-    color: white;
-    text-align: center;
-    margin-top: 200px;
-    margin-left: 17%;
-    margin-bottom: 200px;
+  .hero img {
+    width: 100%;
   }
 
-  .hero-banner h2 {
-    font-size: 4rem;
+  .hero-banner {
+    width: 22%;
+    height: 12%;
+    color: white;
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 17%;
+    margin-bottom: 200px;
   }
 
   .hero-banner button {
     width: 60%;
     height: 4em;
     border-radius: 2em;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+  }
+
+  .hero-banner button a {
+    letter-spacing: 1px;
+    color: #777;
+    text-shadow: 1px 1px 4px #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
   .nav-social ul {
@@ -79,6 +90,7 @@ content.css
   i:hover {
     transform: scale(1.2);
     transition: 0.1s;
+  }
   /** Unterseite
       *
       * Gestaltung der ersten Unterseite 
@@ -88,10 +100,16 @@ content.css
 /* Ende @media */
 
 @media screen and (min-width: 1080px) {
+  .hero-banner h2 {
+    font-size: 4rem;
+  }
 }
 
 /* Ende der Media Query */
 
 @media screen and (min-width: 800px) {
+  .hero-banner h2 {
+    font-size: 3rem;
+  }
 }
 /* Ende der Media Query */
