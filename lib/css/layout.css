@@ -3,7 +3,7 @@
 layout.css
 
 - Gestaltung der Layoutbereiche
-- Hauptnavigation in eigenem Stylesheet
+- Hauptnavigation
 - Elemente im Inhaltsbereich in content.css
 
 ================================== */
@@ -40,6 +40,10 @@ layout.css
   .site-nav-list {
     display: flex;
   }
+
+  /**
+  * Hauptnavigation 
+  */
 
   /**
   * Fußbereich
