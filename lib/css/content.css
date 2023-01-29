@@ -88,6 +88,34 @@ content.css
     flex-flow: column;
     padding: 8%;
   }
+
+  .about-me-card hr {
+    width: 100%;
+  }
+
+  .about-me-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10%;
+  }
+
+  .about-me-button button {
+    width: 30%;
+    height: 4em;
+    border-radius: 2em;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+  }
+
+  .about-me-button button a {
+    letter-spacing: 1px;
+    color: #777;
+    text-shadow: 1px 1px 4px #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
   .nav-social ul {
     display: flex;
     gap: 15px;
