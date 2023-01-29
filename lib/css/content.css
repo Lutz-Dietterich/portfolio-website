@@ -73,6 +73,21 @@ content.css
     text-decoration: none;
   }
 
+  .about-me {
+    display: flex;
+    flex: 1 3;
+    margin: 0;
+  }
+
+  .about-me img {
+    width: 35%;
+  }
+
+  .about-me-card {
+    display: flex;
+    flex-flow: column;
+    padding: 8%;
+  }
   .nav-social ul {
     display: flex;
     gap: 15px;
