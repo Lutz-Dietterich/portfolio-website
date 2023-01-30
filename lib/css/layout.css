@@ -19,7 +19,10 @@ layout.css
   */
 
   .site-header {
+    display: flex;
     height: 100px;
+    justify-content: space-between;
+    margin: 20px 40px 20px 40px;
   }
 
   .site-header h1 {
@@ -28,28 +31,52 @@ layout.css
     font-size: 4rem;
     font-weight: 600;
     text-shadow: 2px 2px 2px gray;
+    margin-left: 5%;
   }
 
   .site-header h1 a {
     text-decoration: none;
-  }
-
-  .site-nav {
-    display: flex;
-  }
-  .site-nav-list {
-    display: flex;
+    color: white;
   }
 
   /**
   * Hauptnavigation 
   */
 
+  .site-nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .site-nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .site-nav a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    margin-right: 100px;
+  }
+
+  .site-nav a:hover {
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+  }
+
   /**
   * Fußbereich
   */
 
   .site-footer {
+    position: relative;
+    top: 100%;
     background-color: #333;
     opacity: 0.7;
     padding: 1%;
